@@ -8,7 +8,7 @@
 
 *I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginers guide, it might still be advanced for some of you.
 
-This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](#) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
+This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](https://notepad-plus-plus.org/) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
 #### Installing a custom kernel on your SNES Classic for ftp access
 1. Download, Install and Launch Hakchi2 2.18 using the 2.17d [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
@@ -144,13 +144,13 @@ To run the `sfc2sfrom.py` script you can use the `.bat` file program I wrote bel
 
 #### Creating a ROM Package
 
-Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* 
+Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* 
 
-I've written a script as mentioned above to help you with filenames, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like.
+I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like.
 
 Next you'll want to create a `.desktop` file in Notepad++ or Notepad, any text editor will do. It contains all the information about the ROM. Use the same naming scheme you did with the images. *Example: CLV-P-DNA64.desktop*
 
-Here is a template you can use. Create a new document and paste the template below into it.
+Here is a template you can use until I add this feature to my program. Create a new document and paste the template below into it.
 ```
 [Desktop Entry]
 Type=Application
