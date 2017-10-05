@@ -6,7 +6,7 @@
 
 #### Use this `Unofficial` guide at your own risk!
 
-*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginers guide, it might still be advanced for some of you.
+*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginers guide, it might still be advanced for some of you. TIP: Always read ahead before trying something so you don't mistake explanations for instructions ;)
 
 This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](https://notepad-plus-plus.org/) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
@@ -90,11 +90,11 @@ In the next window, find and select the user variable named Path and click Edit�
 
 Scroll to the end of the value, add a semi-colon, and then add the location of python.exe.
 
-(If you do not know where your python.exe is, you can search for it.)
+(If you do not know where your python.exe is, you can search for it. Instructions below)
 
 Click OK to save this change.
 
-If you do not have a user variable named Path, click the New… button.
+If you do not have a `user variable` named Path, click the New… button.
 
 Add a variable named Path and make its value the location of your python.exe.
 
@@ -118,9 +118,9 @@ Now that that's done you can move onto the next part of the guide...
 
 #### Configuring the SNES Classic for new ROMS.
 
-The first thing you want to do is create two backups of the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`. Keep one someplace safe as you'll need it if you ever want to switch back to the original games folder. The other one we're going to edit.
+The first thing you want to do is create (2) backups of the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`. Keep one someplace safe and rename it `b0000_defines.bkp` so you don't mix them up as you'll need it if you ever want to switch back to the original games folder. The other one we're going to edit.
 
-Next we're going to edit the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`, You can edit this file using Notepad++ to match the one below. All we're doing is changing the 'gamepath=' to our new directory since we don't have write access to the default location. Make sure after you save it there's **NO** extension like .txt on the end.
+Next we're going to edit the other `b0000_defines` file you downloaded, You can edit this file using Notepad++ to match the one below. All we're doing is changing the 'gamepath=' to our new directory since we don't have write access to the default location. Make sure after you save it there's **NO** extension like .txt on the end.
 ```
 modname=hakchi
 modpath=/$modname
@@ -133,8 +133,8 @@ gamepath=/usr/share/games
 temppath=/tmp
 ```
 
-Now that you've edited the `b0000_defines` file, you can copy the modified file back to the SNES using the FTP client.
-Leave your SNES ON as at this point if you shut the system down, no games will show up as we're pointing the system to a different directory that we haven't yet added games too. Now let's get some games ready!
+Now that you've edited the `b0000_defines` file, you can copy the modified file back to the SNES using Filezilla or other FTP client.
+Leave your SNES ON as at this point if you shut the system down, no games will show up as we're pointing the system to a different directory that we haven't yet added games too. DON'T PANIC! Now let's get some games ready!
 
 
 #### Converting SNES games from .smc/.sfc to .sfrom format
@@ -145,9 +145,7 @@ To run the `sfc2sfrom.py` script you can use the `.bat` file program I wrote bel
 
 #### Creating a ROM Package
 
-Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* 
-
-I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like.
+Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like.
 
 Next you'll want to create a `.desktop` file in Notepad++ or Notepad, any text editor will do. It contains all the information about the ROM. Use the same naming scheme you did with the images. *Example: CLV-P-DNA64.desktop*
 
