@@ -57,6 +57,7 @@ To get to the command line, open the Windows menu and type `command` in the sear
 In the Command Prompt window, type the following and press Enter.
 
 `C:\>python`
+
 If Python is installed and in your path, then this command will run python.exe and show you the version number.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_03.png "Example 3")
