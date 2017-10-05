@@ -2,6 +2,23 @@
 ## A beginners guide to installing games on the SNES Classic by DNA64.
 ###### This guide is for Windows users only at this time.
 
+#### Index:
+[Disclaimer](https://github.com/DNA64/SuperHakchi/blob/master/README.md#attention--warning--caution--disclaimer)
+
+[Installing a custom kernel on your SNES Classic for ftp access](https://github.com/DNA64/SuperHakchi/blob/master/README.md#installing-a-custom-kernel-on-your-snes-classic-for-ftp-access)
+
+[Installing and Setting up Python (Required for Scripts)](https://github.com/DNA64/SuperHakchi/blob/master/README.md#installing-and-setting-up-python-required-for-scripts)
+
+[Configuring the SNES Classic for new ROMS.](https://github.com/DNA64/SuperHakchi/blob/master/README.md#configuring-the-snes-classic-for-new-roms)
+
+[Converting SNES games from .smc/.sfc to .sfrom format](https://github.com/DNA64/SuperHakchi/blob/master/README.md#converting-snes-games-from-smcsfc-to-sfrom-format)
+
+[Creating a ROM Package](https://github.com/DNA64/SuperHakchi/blob/master/README.md#creating-a-rom-package)
+
+[Transferring ROMS to the SNES Classic](https://github.com/DNA64/SuperHakchi/blob/master/README.md#transferring-roms-to-the-snes-classic)
+
+[Oops! I think I broke it?](https://github.com/DNA64/SuperHakchi/blob/master/README.md#oops-i-think-i-broke-it)
+
 ### ATTENTION! / WARNING! / CAUTION! / DISCLAIMER!
 
 #### Use this `Unofficial` guide at your own risk!
