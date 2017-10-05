@@ -1,5 +1,5 @@
 # SuperHakchi
-## A beginners guide to installing games on the SNES Classic by DNA64.
+## A detailed guide to installing games on the SNES Classic by DNA64.
 ###### This guide is for Windows users only at this time.
 
 #### Index:
