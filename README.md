@@ -64,7 +64,7 @@ If Python is installed and in your path, then this command will run python.exe a
 
 Otherwise, you will see:
 
-'python' is not recognized as an internal or external command, operable program or batch file.
+`python` is not recognized as an internal or external command, operable program or batch file.
 In this case, you need to download and install Python [3.6.0](https://www.python.org/downloads/release/python-360/) and then add it to your [path](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html#add-to-path).
 
 Download and install Python [3.6.0](https://www.python.org/downloads/release/python-360/) for Windows
@@ -79,7 +79,6 @@ Add Python to [path](https://edu.google.com/openonline/course-builder/docs/1.10/
 
 In the Start menu, search for `advanced system settings` and select `View advanced system settings`.
 
-
 In the window that appears, click Environment Variables… near the bottom right.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_01.png "Example 1")
@@ -88,7 +87,8 @@ In the next window, find and select the user variable named Path and click Edit�
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_02.png "Example 2")
 
-Scroll to the end of the value, add a semi-colon, and then add the location of python.exe. (If you do not know where your python.exe is, you can search for it.)
+Scroll to the end of the value, add a semi-colon, and then add the location of python.exe. 
+(If you do not know where your python.exe is, you can search for it.)
 
 Click OK to save this change.
 
@@ -96,7 +96,7 @@ If you do not have a user variable named Path, click the New… button.
 
 Add a variable named Path and make its value the location of your python.exe.
 
-*Finding python.exe*
+**Finding python.exe**
 
 If you do not know where Python was installed, search for `python.exe` in the Windows menu.
 
@@ -116,6 +116,10 @@ Now that that's done you can move onto the next part of the guide...
 
 ####Converting SNES games from .smc/.sfc to .sfrom format
 
-W.I.P
+A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) created and shared a [set](https://gist.github.com/anpage/4834433944a2875ee6d4cbb5786c6bf7) of python scripts on his [gist](https://gist.github.com/anpage/) page for converting games to the supported format `.sfrom`.
+
+To run the `sfc2sfrom.py` script you can use the included `.bat` file script I wrote. This will convert `.smc` and `.sfc` ROMS into the required `.sfrom` format (This is only required when using the native emulator, you do not need to convert ROMS if you're using RetroArch).
+
+W.I.P.
 
 Questions? Comments? Let me know!
