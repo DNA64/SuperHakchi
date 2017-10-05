@@ -142,11 +142,8 @@ A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) 
 
 To run the `sfc2sfrom.py` script you can use the `.bat` file program I wrote below. This will convert `.smc` and `.sfc` ROMS into the required `.sfrom` format and name them appropriately as well (This is only required when using the native emulator `canoe`. You do not need to convert ROMS if you're using RetroArch).
 
-W.I.P
-Todo: Add link to .bat and images?
-
 #### Creating a ROM Package
-W.I.P
+
 Todo: Add images and link to naming script.
 
 Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* 
@@ -191,7 +188,6 @@ Example: You should now have a game folder (CLV-P-DNA64) with (4) files.
 Now the moment you've been waiting for, let's see if it works!
 
 #### Transferring ROMS to the SNES Classic.
-W.I.P
 
 Launch Hakchi2 if it's not already running and select `Tools` from the menu bar at the top of the Hakchi2 window and ensure that there is a check-mark next to “FTP server on `ftp://root:clover@127.0.0.1:1021`”. 
 Leave Hakchi2 open.
