@@ -4,7 +4,7 @@
 
 ### *ATTENTION! / WARNING! / CAUTION! / DISCLAIMER
 
-#### Use this guide at your own risk!
+#### Use this `Unofficial` guide at your own risk!
 
 *I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.*
 
@@ -59,12 +59,7 @@ In the Command Prompt window, type the following and press Enter.
 `C:\>python`
 If Python is installed and in your path, then this command will run python.exe and show you the version number.
 
-```
-Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AM
-D64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_03.png "Example 3")
 
 Otherwise, you will see:
 
@@ -113,6 +108,7 @@ Confirm addition to path
 Open a new command prompt and re-run the original command:
 
 `C:>python`
+
 to confirm that Python 3.6.0 is installed and added to your path.
 
 Now that that's done you can move onto the next part of the guide...
