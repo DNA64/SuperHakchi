@@ -6,7 +6,7 @@
 
 #### Use this `Unofficial` guide at your own risk!
 
-*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release!
+*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginers guide, it might still be advanced for some of you.
 
 This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](#) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
@@ -143,8 +143,6 @@ A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) 
 To run the `sfc2sfrom.py` script you can use the `.bat` file program I wrote below. This will convert `.smc` and `.sfc` ROMS into the required `.sfrom` format and name them appropriately as well (This is only required when using the native emulator `canoe`. You do not need to convert ROMS if you're using RetroArch).
 
 #### Creating a ROM Package
-
-Todo: Add images and link to naming script.
 
 Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* 
 
