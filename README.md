@@ -88,7 +88,8 @@ In the next window, find and select the user variable named Path and click Editâ
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_02.png "Example 2")
 
-Scroll to the end of the value, add a semi-colon, and then add the location of python.exe. 
+Scroll to the end of the value, add a semi-colon, and then add the location of python.exe.
+
 (If you do not know where your python.exe is, you can search for it.)
 
 Click OK to save this change.
