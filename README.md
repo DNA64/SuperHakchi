@@ -194,9 +194,9 @@ Now that you have the folder, and the ROM, we need to create the .desktop file a
 
 #### Creating a ROM Package
 
-*The boxart image sizes here are not correct, they work, but it they stick out from the rest as they're a little taller. I will update this with the proper sizes shortly*
+*Fixed!: The boxart image sizes are now inline with the original image sizes*
 
-Each ROM file requires (2) images. The main boxart image `CLV-X-XXXXX.png` `228x186`, and the thumbnail image `CLV-X-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly, make sure to save them as `.png`. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like. If you're not using the script you'll need to create a folder for each game using the same naming scheme `CLV-X-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-X-DNA64`* 
+Each ROM file requires (2) images. The main boxart image `CLV-X-XXXXX.png` `228x160`, and the thumbnail image `CLV-X-XXXXX_small.png` `40x28`. You'll have to google the box art for each game and then resize it accordingly, make sure to save them as `.png`. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like. If you're not using the script you'll need to create a folder for each game using the same naming scheme `CLV-X-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-X-DNA64`* 
 
 Next you'll want to create a `.desktop` file in Notepad++ or Notepad, any text editor will do. It contains all the information about the ROM. Use the same naming scheme you did with the images. *Example: CLV-X-DNA64.desktop*
 
