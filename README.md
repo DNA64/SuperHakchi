@@ -134,7 +134,7 @@ Click OK to save this change.
 
 If you do not have a `user variable` named Path, click the New… button.
 
-Add a variable named Path and make its value the location of the folder containing your python.exe.
+Add a variable named Path and make its value the absolute path of the folder containing your python.exe.
 
 **Finding python.exe**
 
