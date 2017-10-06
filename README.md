@@ -1,7 +1,7 @@
 # A detailed guide to installing games on the SNES Classic by DNA64.
 ###### This guide is for Windows users only at this time.
 
-#### Index:
+### Index:
 [**Disclaimer**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#attention--warning--caution--disclaimer)
 
 [**Installing a custom kernel on your SNES Classic for ftp access**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#installing-a-custom-kernel-on-your-snes-classic-for-ftp-access)
