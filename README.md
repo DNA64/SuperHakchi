@@ -26,6 +26,10 @@
 
 This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](https://notepad-plus-plus.org/) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
+**Update:** 
+This guide assumings you're using using the Official Hakchi2 Web Installer, not a modifed version. 
+Please keep this in mind when having issues.
+
 #### Installing a custom kernel on your SNES Classic for ftp access
 1. Download, Install and Launch Hakchi2 2.18 using the 2.17d [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
 
@@ -50,9 +54,13 @@ Leave Hakchi2 open.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_ftp.png "Example 5")
 
-6. Install/Launch [FileZilla](https://filezilla-project.org/) or use your preferred FTP client.
+6. Unselect the Original 30 games! NEVER SYNC THESE TO YOUR SNES!
 
-Enter in the following information and connect.
+![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_original30.png "Example 6")
+
+7. Install/Launch [FileZilla](https://filezilla-project.org/) or use your preferred FTP client.
+
+Enter in the following information and click connect.
 
 ```
 Host: 127.0.0.1
@@ -62,13 +70,23 @@ Port: 1021
 ```
 If all went well you should see the SNES Classics file system in the FTP client.
 
-![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_filezilla.png "Example 6")
+![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_filezilla.png "Example 7")
+
+8. Since we have the FTP client open, lets go ahead and make a quick change so we don't have issues when transfering files. Click on the edit button at the top of FileZilla and Select Settings. A new settings window will popup.
+
+![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_ftp_settings.png "Example 8")
+
+
+9. On the menu on the left click on "Transfers" and then under Concurrent transfers set the maximum simultaneous transfers to [1].
+![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_ftp_concurrent.png "Example 9")
 
 
 #### Installing and Setting up Python (Required for Scripts)
 
-You’ll need to have Python installed to use the included python scripts, optionally you can manually hex edit the ROM headers/footers, but that is beyond the scope of this guide. If you already have Python 3.6.0 you can skip to the next section of the guide. The installed Python version must be version 3.6.0 and is available at the bottom of this [page](https://www.python.org/downloads/release/python-360/). 
-2.7 has been tested and is confirmed not working. 3.6.0 or above should work, but If you have any issues try 3.6.0 specifically.
+You’ll need to have Python installed to use the included python scripts, optionally you can manually hex edit the ROM headers/footers, but that is beyond the scope of this guide. If you already have Python 3.6.0 or greater you can skip to the next section of the guide.
+
+The installed Python version must be version 3.6.0 or above and is available at the bottom of this [page](https://www.python.org/downloads/release/python-360/). 
+2.7 has been tested and is confirmed not working. 3.6.0 and greater have been tested and are confirmed working upto 3.6.3.
 
 To get to the command line, open the Windows Start menu and type `command` in the search bar. Select `Command Prompt` from the search results.
 
@@ -91,6 +109,8 @@ Find and download the Windows installer file that matches your system.
 
 Open the file to start the installation wizard.
 Follow the instructions and make a note of where Python is installed on your system.
+
+**When installing Python there is an option to add it to the path, if you checked that box you can skip ahead to Configuring the SNES Classic for new ROMS.**
 
 Add Python to [path](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html#add-to-path)
 
@@ -134,7 +154,7 @@ Now that that's done you can move onto the next part of the guide...
 
 #### Configuring the SNES Classic for new ROMS.
 
-The first thing you want to do is create (2) backups of the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`. Keep one someplace safe and rename it `b0000_defines.bkp` so you don't mix them up as you'll need it if you ever want to switch back to the original games folder. The other one we're going to edit.
+The first thing you want to do is create (2) backups of the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`. Keep one someplace safe and rename it `b0000_defines.bkp` so you don't mix them up as you'll need it if you ever want to switch back to the original games folder. 
 
 Next we're going to edit the other `b0000_defines` file you downloaded, You can edit this file using Notepad++ to match the one below. All we're doing is changing the 'gamepath=' to our new directory since we don't have write access to the default location. Make sure after you save it there's **NO** extension like .txt on the end.
 ```
@@ -155,22 +175,37 @@ Leave your SNES ON as at this point if you shut the system down, no games will s
 
 #### Converting SNES games from .smc/.sfc to .sfrom format
 
-A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) created and shared a [set](https://gist.github.com/anpage/4834433944a2875ee6d4cbb5786c6bf7) of python scripts on his [gist](https://gist.github.com/anpage/) page for converting games to the supported format `.sfrom`.
+You may want to check [this list](https://www.reddit.com/r/miniSNES/comments/74dc3c/snes_classic_hacking_how_is_the_progress_going/) before continuing to see if your game is working or not. It's not complete, but it should be a good refernce for now.
 
-To run the `sfc2sfrom.py` script you can use the `.bat` file program I wrote below. This will convert `.smc` and `.sfc` ROMS into the required `.sfrom` format and name them appropriately as well (This is only required when using the native emulator `canoe`. You do not need to convert ROMS if you're using RetroArch).
+
+A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) created and shared a [set](https://gist.github.com/anpage/4834433944a2875ee6d4cbb5786c6bf7) of python scripts on his [gist](https://gist.github.com/anpage/) page for converting games to the supported format `.sfrom`. I've encorporated that script into my program and it's now automated.
+
+To run the `sfc2sfrom.py` script you can use one of the `.bat` file programs I wrote below. These will automatically convert `.smc` and `.sfc` ROMS into the required `.sfrom` format and name them appropriately as well (This is only required when using the native emulator `canoe`. You do not need to convert ROMS if you're using RetroArch, but that is again beyond the scope of this guide). No special naming of the ROMS is required on your part, the script will find and rename them automatically. Make sure they're **not** compressed! only .smc or .sfc files work right now.
+
+I've included (2) .batch scripts in the download for converting SNES games. I recomend running `SNESCE_ROM_TOOL[DNA64].bat` first to ensure that everything is properly configured as I've incorpoated some error checking in this one and it will tell you what the problem is if you have one. The second script is the 1 click solution for fast conversions `1-click-convert[DNA64].bat`. A popup may appear for a moment, but will close as soon as the program ends, this is normal.
+
+The program will output the new `.sfrom` file and move it into a folder under the same name.
+Example: CLV-X-SHIBE > CLV-X-SHIBE.sfrom
+
+The program will then move the `.sfc` file into a folder called `sfcfiles` along with a matching text file so you know which game is which. This is really sloppy I know, but it works and I plan on fixing it soon. Really you can just conside this a trash folder since you no longer need these, unless you do .. :P
+
+Now that you have the folder, and the ROM, we need to create the .desktop file and the images. It's these files that can end up giving you C7 and C8 errors so keep that in mind when transfering files. More on this below
+
 
 #### Creating a ROM Package
 
-Each ROM file requires (2) images. The main boxart image `CLV-P-XXXXX.png` `228x186`, and the thumbnail image `CLV-P-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). Create a folder for each game using the same naming scheme `CLV-P-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-P-DNA64`* I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like.
+*The boxart image sizes here are not correct, they work, but it they stick out from the rest as they're a little taller. I will update this with the proper sizes shortly*
 
-Next you'll want to create a `.desktop` file in Notepad++ or Notepad, any text editor will do. It contains all the information about the ROM. Use the same naming scheme you did with the images. *Example: CLV-P-DNA64.desktop*
+Each ROM file requires (2) images. The main boxart image `CLV-X-XXXXX.png` `228x186`, and the thumbnail image `CLV-X-XXXXX_small.png` `40x32`. You'll have to google the box art for each game and then resize it accordingly, make sure to save them as `.png`. I highly recomend the FREE graphic editing program [Paint.net](http://getpaint.net). I've written a script as mentioned above to help you with file and folder names as well as converting the ROM files to `.sfrom`, you can download that [HERE](https://mega.nz/#!349ywCwD!waGkuajIA_6Ikz4VpP52K8UGDaR5DhuTQSoIXW3mgro) if you like. If you're not using the script you'll need to create a folder for each game using the same naming scheme `CLV-X-XXXXX`, where (XXXXX) is a unique nameID using only Numbers and Capital letters. *Example: `CLV-X-DNA64`* 
 
-Here is a template you can use until I add this feature to my program. Create a new document and paste the template below into it.
+Next you'll want to create a `.desktop` file in Notepad++ or Notepad, any text editor will do. It contains all the information about the ROM. Use the same naming scheme you did with the images. *Example: CLV-X-DNA64.desktop*
+
+I've included a template in the download file. You can also [use this tool](http://astrasealtools.com/misc/snesmini/submit.php) someone created (Credit to follow once I find them) to generate the file.
 ```
 [Desktop Entry]
 Type=Application
 Exec=/usr/bin/clover-canoe-shvc -rom /usr/share/games/CLV-P-DNA64/CLV-P-DNA64.sfrom --volume 100 -rollback-snapshot-period 600
-Path=/var/lib/clover/profiles/0//CLV-P-DNA64
+Path=/var/lib/clover/profiles/0/CLV-P-DNA64
 Name=Pilotwings
 Icon=/usr/share/games/CLV-P-DNA64/CLV-P-DNA64.png
 
@@ -188,9 +223,11 @@ Copyright=Nintendo 1964
 MyPlayDemoTime=45
 ```
 
-Replace all instances of CLV-P-DNA64 with your own unique gameID. And fill out the rest of the information like the games name, publisher, number of players etc. Don't worry if you don't know, just leave it as default.
+Replace all instances of the current game `CLV-P-DNA64` with your own unique gameID. And fill out the rest of the information like the games name, publisher, number of players etc. Don't worry if you don't know, just leave it as default.
 
-Each game folder (CLV-P-DNA64) goes into `/var/lib/hakchi/rootfs/usr/share/games/`
+SaveCount=0 is FALSE
+SaveCount=1 is TRUE
+Set this to TRUE or FALSE depending on if the game has in game save abilities like Final Fantasy for example.
 
 Example: You should now have a game folder (CLV-P-DNA64) with (4) files.
 + CLV-P-DNA64.png
@@ -203,7 +240,7 @@ Now the moment you've been waiting for, let's see if it works!
 #### Transferring ROMS to the SNES Classic.
 
 Launch Hakchi2 if it's not already running and select `Tools` from the menu bar at the top of the Hakchi2 window and ensure that there is a check-mark next to “FTP server on `ftp://root:clover@127.0.0.1:1021`”. 
-Leave Hakchi2 open.
+Leave Hakchi2 open or the FTP won't be able to connect.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_ftp.png "Example 5")
 
@@ -221,14 +258,14 @@ If all went well you should see the SNES Classics file system in the FTP client.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_filezilla.png "Example 6")
 
-Navigate to `/var/lib/hakchi/rootfs/usr/share/games/` and copy the game folder we just created `CLV-P-DNA64` onto the SNES Classic system. Power the SNES Classic off, wait a moment and then turn it back on. Browse the list for your newly added game!
+In the FTP client Navigate to `/var/lib/hakchi/rootfs/usr/share/games/` and copy the game folder we just created `CLV-P-DNA64` onto the SNES Classic system. Once the transfer completes power the SNES Classic off, wait a moment and then turn it back on. Browse the list for your newly added game!
 
-If you don't see it, double check the .desktop file and make sure everything is correct. If it still doesn't show up, review the guide or try a different game.
+If you don't see it, double check the .desktop file and make sure everything is correct. If it still doesn't show up, review the guide or try a different game. See below for more on this.
 
 Now repeat the process to install more games. - Enjoy! :)
 
 #### Oops! I think I broke it?
-If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. If you do and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2.
+If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. You can also try copying and renaming images from a working game to ruleout any issues with your images. Compare your `.desktop` file to mine as well. If you do get and error and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2, but before you do that backup your game saves! Some users are reporting loosing game saves after reverting back to the original kernel. Saves can be found in `/var/lib/clover/profiles/0`.
 
 Special Thanks to **[ClusterM](http://clusterrr.com/)** and **[MadMonkey1907](https://www.reddit.com/user/madmonkey1907)** for creating Hakchi2 and devoting so much of their free time to the project and **[Valter](http://gbatemp.net/members/valter.381712/)** for his Python ROM Scripts.
 
