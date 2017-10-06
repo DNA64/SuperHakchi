@@ -22,12 +22,12 @@
 
 #### Use this `Unofficial` guide at your own risk!
 
-*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginers guide, it might still be advanced for some of you. TIP: Always read ahead before trying something so you don't mistake explanations for instructions ;)
+*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginners guide, it might still be advanced for some of you. TIP: Always read ahead before trying something so you don't mistake explanations for instructions ;)
 
 This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](https://notepad-plus-plus.org/) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
 **Update:** 
-This guide assumings you're using using the Official Hakchi2 Web Installer, not a modifed version. 
+This guide assuming you're using using the Official Hakchi2 Web Installer, not a modified version. 
 Please keep this in mind when having issues.
 
 ### Installing a custom kernel on your SNES Classic for ftp access
@@ -86,7 +86,7 @@ If all went well you should see the SNES Classics file system in the FTP client.
 You’ll need to have Python installed to use the included python scripts, optionally you can manually hex edit the ROM headers/footers, but that is beyond the scope of this guide. If you already have Python 3.6.0 or greater you can skip to the next section of the guide.
 
 The installed Python version must be version 3.6.0 or above and is available at the bottom of this [page](https://www.python.org/downloads/release/python-360/). 
-2.7 has been tested and is confirmed not working. 3.6.0 and greater have been tested and are confirmed working upto 3.6.3.
+2.7 has been tested and is confirmed not working. 3.6.0 and greater have been tested and are confirmed working up to 3.6.3.
 
 To get to the command line, open the Windows Start menu and type `command` in the search bar. Select `Command Prompt` from the search results.
 
@@ -175,21 +175,21 @@ Leave your SNES ON as at this point if you shut the system down, no games will s
 
 ### Converting SNES games from .smc/.sfc to .sfrom format
 
-You may want to check [this list](https://www.reddit.com/r/miniSNES/comments/74dc3c/snes_classic_hacking_how_is_the_progress_going/) before continuing to see if your game is working or not. It's not complete, but it should be a good refernce for now.
+You may want to check [this list](https://www.reddit.com/r/miniSNES/comments/74dc3c/snes_classic_hacking_how_is_the_progress_going/) before continuing to see if your game is working or not. It's not complete, but it should be a good reference for now.
 
 
-A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) created and shared a [set](https://gist.github.com/anpage/4834433944a2875ee6d4cbb5786c6bf7) of python scripts on his [gist](https://gist.github.com/anpage/) page for converting games to the supported format `.sfrom`. I've encorporated that script into my program and it's now automated.
+A fellow GBATemp user named [Valter](http://gbatemp.net/members/valter.381712/) created and shared a [set](https://gist.github.com/anpage/4834433944a2875ee6d4cbb5786c6bf7) of python scripts on his [gist](https://gist.github.com/anpage/) page for converting games to the supported format `.sfrom`. I've incorporated that script into my program and it's now automated.
 
 To run the `sfc2sfrom.py` script you can use one of the `.bat` file programs I wrote below. These will automatically convert `.smc` and `.sfc` ROMS into the required `.sfrom` format and name them appropriately as well (This is only required when using the native emulator `canoe`. You do not need to convert ROMS if you're using RetroArch, but that is again beyond the scope of this guide). No special naming of the ROMS is required on your part, the script will find and rename them automatically. Make sure they're **not** compressed! only .smc or .sfc files work right now.
 
-I've included (2) .batch scripts in the download for converting SNES games. I recomend running `SNESCE_ROM_TOOL[DNA64].bat` first to ensure that everything is properly configured as I've incorpoated some error checking in this one and it will tell you what the problem is if you have one. The second script is the 1 click solution for fast conversions `1-click-convert[DNA64].bat`. A popup may appear for a moment, but will close as soon as the program ends, this is normal.
+I've included (2) .batch scripts in the download for converting SNES games. I recommend running `SNESCE_ROM_TOOL[DNA64].bat` first to ensure that everything is properly configured as I've incorporated some error checking in this one and it will tell you what the problem is if you have one. The second script is the 1 click solution for fast conversions `1-click-convert[DNA64].bat`. A popup may appear for a moment, but will close as soon as the program ends, this is normal.
 
 The program will output the new `.sfrom` file and move it into a folder under the same name.
 Example: CLV-X-SHIBE > CLV-X-SHIBE.sfrom
 
-The program will then move the `.sfc` file into a folder called `sfcfiles` along with a matching text file so you know which game is which. This is really sloppy I know, but it works and I plan on fixing it soon. Really you can just conside this a trash folder since you no longer need these, unless you do .. :P
+The program will then move the `.sfc` file into a folder called `sfcfiles` along with a matching text file so you know which game is which. This is really sloppy I know, but it works and I plan on fixing it soon. Really you can just consider this a trash folder since you no longer need these, unless you do .. :P
 
-Now that you have the folder, and the ROM, we need to create the .desktop file and the images. It's these files that can end up giving you C7 and C8 errors so keep that in mind when transfering files. More on this below
+Now that you have the folder, and the ROM, we need to create the .desktop file and the images. It's these files that can end up giving you C7 and C8 errors so keep that in mind when transferring files. More on this below
 
 
 ### Creating a ROM Package
@@ -265,7 +265,7 @@ If you don't see it, double check the .desktop file and make sure everything is 
 Now repeat the process to install more games. - Enjoy! :)
 
 ### Oops! I think I broke it?
-If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. You can also try copying and renaming images from a working game to ruleout any issues with your images. Compare your `.desktop` file to mine as well. If you do get and error and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2, but before you do that backup your game saves! Some users are reporting loosing game saves after reverting back to the original kernel. Saves can be found in `/var/lib/clover/profiles/0`.
+If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. You can also try copying and renaming images from a working game to rule out any issues with your images. Compare your `.desktop` file to mine as well. If you do get and error and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2, but before you do that backup your game saves! Some users are reporting loosing game saves after reverting back to the original kernel. Saves can be found in `/var/lib/clover/profiles/0`.
 
 Special Thanks to **[ClusterM](http://clusterrr.com/)** and **[MadMonkey1907](https://www.reddit.com/user/madmonkey1907)** for creating Hakchi2 and devoting so much of their free time to the project and **[Valter](http://gbatemp.net/members/valter.381712/)** for his Python ROM Scripts.
 
