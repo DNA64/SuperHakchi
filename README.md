@@ -100,7 +100,9 @@ If Python is installed and in your path, then this command will run python.exe a
 
 Otherwise, you will see:
 
-`python` is not recognized as an internal or external command, operable program or batch file.
+```
+python is not recognized as an internal or external command, operable program or batch file.
+```
 In this case, you need to download and install Python [3.6.0](https://www.python.org/downloads/release/python-360/) and then add it to your [path](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html#add-to-path).
 
 Download and install Python [3.6.0](https://www.python.org/downloads/release/python-360/) for Windows
@@ -124,7 +126,7 @@ In the next window, find and select the user variable named Path and click Editâ
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_02.png "Example 2")
 
-Scroll to the end of the value, add a semi-colon, and then add the location of python.exe.
+Scroll to the end of the value, add a semi-colon, and then add the path of the folder containing python.exe. On newer versions of Windows, editing PATH will show a list. Just add said path as an entry at the end.
 
 (If you do not know where your python.exe is, you can search for it. Instructions below)
 
@@ -132,7 +134,7 @@ Click OK to save this change.
 
 If you do not have a `user variable` named Path, click the Newâ€¦ button.
 
-Add a variable named Path and make its value the location of your python.exe.
+Add a variable named Path and make its value the absolute path of the folder containing your python.exe.
 
 **Finding python.exe**
 
