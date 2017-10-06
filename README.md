@@ -30,7 +30,7 @@ This guide may look overwhelming to some but as always I try to guide you throug
 This guide assumings you're using using the Official Hakchi2 Web Installer, not a modifed version. 
 Please keep this in mind when having issues.
 
-#### Installing a custom kernel on your SNES Classic for ftp access
+### Installing a custom kernel on your SNES Classic for ftp access
 1. Download, Install and Launch Hakchi2 2.18 using the 2.17d [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_web_installer.png "Example 1")
@@ -81,7 +81,7 @@ If all went well you should see the SNES Classics file system in the FTP client.
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_ftp_concurrent.png "Example 9")
 
 
-#### Installing and Setting up Python (Required for Scripts)
+### Installing and Setting up Python (Required for Scripts)
 
 You’ll need to have Python installed to use the included python scripts, optionally you can manually hex edit the ROM headers/footers, but that is beyond the scope of this guide. If you already have Python 3.6.0 or greater you can skip to the next section of the guide.
 
@@ -152,7 +152,7 @@ to confirm that Python 3.6.0 is installed and added to your path.
 
 Now that that's done you can move onto the next part of the guide...
 
-#### Configuring the SNES Classic for new ROMS.
+### Configuring the SNES Classic for new ROMS.
 
 The first thing you want to do is create (2) backups of the `b0000_defines` file located in `/var/lib/hakchi/rootfs/etc/preinit.d/`. Keep one someplace safe and rename it `b0000_defines.bkp` so you don't mix them up as you'll need it if you ever want to switch back to the original games folder. 
 
@@ -173,7 +173,7 @@ Now that you've edited the `b0000_defines` file, you can copy the modified file 
 Leave your SNES ON as at this point if you shut the system down, no games will show up as we're pointing the system to a different directory that we haven't yet added games too. DON'T PANIC! Now let's get some games ready!
 
 
-#### Converting SNES games from .smc/.sfc to .sfrom format
+### Converting SNES games from .smc/.sfc to .sfrom format
 
 You may want to check [this list](https://www.reddit.com/r/miniSNES/comments/74dc3c/snes_classic_hacking_how_is_the_progress_going/) before continuing to see if your game is working or not. It's not complete, but it should be a good refernce for now.
 
@@ -192,7 +192,7 @@ The program will then move the `.sfc` file into a folder called `sfcfiles` along
 Now that you have the folder, and the ROM, we need to create the .desktop file and the images. It's these files that can end up giving you C7 and C8 errors so keep that in mind when transfering files. More on this below
 
 
-#### Creating a ROM Package
+### Creating a ROM Package
 
 *Fixed!: The boxart image sizes are now inline with the original image sizes*
 
@@ -237,7 +237,7 @@ Example: You should now have a game folder (CLV-P-DNA64) with (4) files.
 
 Now the moment you've been waiting for, let's see if it works!
 
-#### Transferring ROMS to the SNES Classic.
+### Transferring ROMS to the SNES Classic.
 
 Launch Hakchi2 if it's not already running and select `Tools` from the menu bar at the top of the Hakchi2 window and ensure that there is a check-mark next to “FTP server on `ftp://root:clover@127.0.0.1:1021`”. 
 Leave Hakchi2 open or the FTP won't be able to connect.
@@ -264,7 +264,7 @@ If you don't see it, double check the .desktop file and make sure everything is 
 
 Now repeat the process to install more games. - Enjoy! :)
 
-#### Oops! I think I broke it?
+### Oops! I think I broke it?
 If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. You can also try copying and renaming images from a working game to ruleout any issues with your images. Compare your `.desktop` file to mine as well. If you do get and error and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2, but before you do that backup your game saves! Some users are reporting loosing game saves after reverting back to the original kernel. Saves can be found in `/var/lib/clover/profiles/0`.
 
 Special Thanks to **[ClusterM](http://clusterrr.com/)** and **[MadMonkey1907](https://www.reddit.com/user/madmonkey1907)** for creating Hakchi2 and devoting so much of their free time to the project and **[Valter](http://gbatemp.net/members/valter.381712/)** for his Python ROM Scripts.
