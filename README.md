@@ -100,7 +100,8 @@ If Python is installed and in your path, then this command will run python.exe a
 
 Otherwise, you will see:
 
-```pythonpython is not recognized as an internal or external command, operable program or batch file.
+```
+python is not recognized as an internal or external command, operable program or batch file.
 ```
 In this case, you need to download and install Python [3.6.0](https://www.python.org/downloads/release/python-360/) and then add it to your [path](https://edu.google.com/openonline/course-builder/docs/1.10/set-up-course-builder/check-for-python.html#add-to-path).
 
