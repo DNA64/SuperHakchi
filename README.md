@@ -28,7 +28,7 @@ This guide may look overwhelming to some but as always I try to guide you throug
 
 **Update:** 
 This guide assuming you're using using the Official Hakchi2 Web Installer, not a modified version. 
-Please keep this in mind when having issues.
+Please keep this in mind when having issues. Also as progress continues so quickly some parts of this guide may become outdated or no longer required. I will do my best to continue updating this guide.
 
 ### Installing a custom kernel on your SNES Classic for ftp access
 1. Download, Install and Launch Hakchi2 2.18 using the 2.17d [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
