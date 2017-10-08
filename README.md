@@ -1,6 +1,9 @@
 # A detailed guide to installing games on the SNES Classic by DNA64.
 ###### This guide is for Windows users only at this time.
 
+# HAKCHI2 OFFICIALLY RELEASED!
+### Please use the [official release](https://github.com/ClusterM/hakchi2/releases) rather then this guide. I will make one last major update and cleanup to this guide and then it will no longer be updated (At least not until the N64Mini).
+
 ### Index:
 [**Disclaimer**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#attention--warning--caution--disclaimer)
 
