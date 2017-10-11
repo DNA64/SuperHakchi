@@ -6,7 +6,7 @@
 
 If you used the Hakchi2 Web Installer the <kbd>Dump</kbd> folder with the kernel backup will be located in the Hakchi2 folder in <kbd>My Documents\hakchi2</kbd>, otherwise it's located in the same directory as Hakchi2. 
 
-*Make sure to back this file up somewhere safe in case you run into any issues and need to reflash the original kernel.*
+*Make sure to back the <kbd>kernel.img</kbd> file up somewhere safe in case you run into any issues and need to reflash the original kernel.*
 
 ![Failed to load image](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_dump.png "Example 1.1")
 
