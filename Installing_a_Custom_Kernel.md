@@ -14,3 +14,8 @@ If you used the Hakchi2 Web Installer the <kbd>Dump</kbd> folder with the kernel
 2. Select <kbd>Kernel</kbd> from the menu bar at the top of the Hakchi2 window and select <kbd>Flash custom kernel</kbd> and proceed with the on screen instructions. Leave Hakchi2 open.
 
 ![Failed to load image](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_flash_custom_kernel.png "Example 2")
+
+**Congratulations!**
+
+
+You've completed this part of the guide and should now have a backup of your <kbd>kernel.img</kbd> and a custom kernel installed to the SNES Classic. You can continue to the next part of the Guide.
