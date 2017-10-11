@@ -1,8 +1,9 @@
-# A detailed guide to installing games on the SNES Classic by DNA64.
-###### This guide is for Windows users only at this time.
+## A detailed guide to installing games on the SNES Classic by DNA64.
+###### This guide is written for Windows users only at this time, however Mac and Linux users may be able to follow along using similar methods.
 
 # HAKCHI2 OFFICIALLY RELEASED!
-### Please use the [official release](https://github.com/ClusterM/hakchi2/releases) rather then this guide. I will make one last major update and cleanup to this guide and then it will no longer be updated (At least not until the N64Mini).
+### [official release](https://github.com/ClusterM/hakchi2/releases). 
+Development of this guide will continue as part of something larger, more on that soon in the usual places.
 
 ### Index:
 [**Disclaimer**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#attention--warning--caution--disclaimer)
@@ -25,16 +26,16 @@
 
 #### Use this `Unofficial` guide at your own risk!
 
-*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Wait for the official release! As much as I consider this a beginners guide, it might still be advanced for some of you. TIP: Always read ahead before trying something so you don't mistake explanations for instructions ;)
+*I will not be held responsible for any damage(s) that occur if you choose to continue and follow this guide. If you follow this guide properly and without skipping any steps you shouldn't have anything to worry about.* If you have any concern about bricking your system STOP! DO NOT FOLLOW THIS GUIDE! Use the official release! As much as I consider this a beginners guide, it might still be advanced for some of you. TIP: Always read ahead before trying something so you don't mistake explanations for instructions ;)
 
 This guide may look overwhelming to some but as always I try to guide you through every step of the way, in as much detail as possible, so that anyone can follow my guides. If you don't already have [Notepad++](https://notepad-plus-plus.org/) installed, I highly recommend it! This guide assumes you do. If you don't just use any text editor.
 
 **Update:** 
-This guide assuming you're using using the Official Hakchi2 Web Installer, not a modified version. 
-Please keep this in mind when having issues. Also as progress continues so quickly some parts of this guide may become outdated or no longer required. I will do my best to continue updating this guide.
+This guide assumes you're using using the Official Hakchi2 Web Installer, not a modified version. 
+Please keep this in mind when having issues. Also as progress continues so quickly, some parts of this guide may become outdated or no longer required. 
 
 ### Installing a custom kernel on your SNES Classic for ftp access
-1. Download, Install and Launch Hakchi2 2.18 using the 2.17d [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
+1. Download, Install and Launch the [hakchi2_web_installer.exe](https://github.com/ClusterM/hakchi2/releases).
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_web_installer.png "Example 1")
 
