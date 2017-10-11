@@ -2,7 +2,7 @@
 ###### This guide is written for Windows users only at this time, however Mac and Linux users may be able to follow along using similar methods.
 
 # HAKCHI2 OFFICIALLY RELEASED!
-### [official release](https://github.com/ClusterM/hakchi2/releases). 
+### Get the official Hakchi release [HERE](https://github.com/ClusterM/hakchi2/releases). 
 Development of this guide will continue as part of something larger, more on that soon in the usual places.
 
 ### Index:
