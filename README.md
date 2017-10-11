@@ -22,7 +22,10 @@ Development of this guide will continue as part of something larger, more on tha
 
 [**Transferring ROMS to the SNES Classic**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#transferring-roms-to-the-snes-classic)
 
-[**Oops! I think I broke it?**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#oops-i-think-i-broke-it)
+[**Troubleshooting**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#troubleshooting)
+
+
+[**Credits**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#credits)
 
 ### ATTENTION! / WARNING! / CAUTION! / DISCLAIMER!
 
@@ -274,9 +277,11 @@ If you don't see it, double check the .desktop file and make sure everything is 
 
 Now repeat the process to install more games. - Enjoy! :)
 
-### Oops! I think I broke it?
+### Troubleshooting
 If you get a C7, C8 or other error simply delete the last game you copied over from the system and power the system off. When you turn it back on you shouldn't get an error. You can also try copying and renaming images from a working game to rule out any issues with your images. Compare your `.desktop` file to mine as well. If you do get and error and you don't want to troubleshoot it, you can just flash the original kernel you dumped earlier back to the console using Hakchi2, but before you do that backup your game saves! Some users are reporting loosing game saves after reverting back to the original kernel. Saves can be found in `/var/lib/clover/profiles/0`.
 
+
+### Credits
 Special Thanks to **[ClusterM](http://clusterrr.com/)** and **[MadMonkey1907](https://www.reddit.com/user/madmonkey1907)** for creating Hakchi2 and devoting so much of their free time to the project and **[Valter](http://gbatemp.net/members/valter.381712/)** for his Python ROM Scripts.
 
 Questions? Comments? Let me know!
