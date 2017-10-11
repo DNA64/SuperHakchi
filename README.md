@@ -6,7 +6,8 @@
 
 Development of this guide will continue as part of something larger, more on that soon in the usual places.
 
-### Index:
+### Table of contents
+
 [**Disclaimer**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#attention--warning--caution--disclaimer)
 
 [**Installing a custom kernel on your SNES Classic for ftp access**](https://github.com/DNA64/SuperHakchi/blob/master/README.md#installing-a-custom-kernel-on-your-snes-classic-for-ftp-access)
