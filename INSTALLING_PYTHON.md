@@ -39,7 +39,7 @@ Add Python to [path](https://edu.google.com/openonline/course-builder/docs/1.10/
 
 In the Start menu, search for <kbd>advanced system settings</kbd> and select <kbd>View advanced system settings</kbd>.
 
-In the window that appears, click `Environment Variables` near the bottom right.
+In the window that appears, click <kbd>Environment Variables</kbd> near the bottom right.
 
 ![alt txt](https://github.com/DNA64/SuperHakchi/blob/master/hakchi2_python_01.png "Example 1")
 
