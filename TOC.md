@@ -1,4 +1,4 @@
-### **Table of contents**
+### **TABLE OF CONTENTS**
 
 [**Disclaimer**](https://github.com/DNA64/SuperHakchi/blob/master/DISCLAIMER.md)
 
