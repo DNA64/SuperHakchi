@@ -1,3 +1,10 @@
+# This guide is heavily outdated and should not be used!
+### Please use Hakchi2 CE if you're going to mod your NES or SNES Classic.
+[https://github.com/TeamShinkansen/Hakchi2-CE/releases/latest](https://github.com/TeamShinkansen/Hakchi2-CE/releases/latest)
+
+###### 02/22/2020
+---
+
 ## A detailed guide to manually installing and patching games on the SNES Classic by DNA64.
 ###### This guide is written for Windows users only at this time, however Mac and Linux users may be able to follow along using similar methods.
 
